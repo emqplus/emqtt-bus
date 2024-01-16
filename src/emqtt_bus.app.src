@@ -1,0 +1,15 @@
+{application, emqtt_bus,
+ [{description, "Real-Time MQTT Messaging Bus"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {emqtt_bus_app, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["Apache-2.0"]},
+  {links, []}
+ ]}.
