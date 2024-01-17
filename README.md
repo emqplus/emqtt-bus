@@ -38,14 +38,14 @@ Domain
 
 Each MQTT bus is physically isolated in a domain, which is identified by the domain ID.
 
-Create a MQTT bus in domain 1:
+Create an MQTT bus in domain 1:
 
 ```erlang
 emqtt_bus:open(1).
 emqtt_bus:subscribe(1, "t").
 emqtt_bus:publish(1, "t", "p").
 ```
-Create a MQTT bus in domain 1:
+Create an MQTT bus in domain 2:
 
 ```erlang
 emqtt_bus:open(2).
